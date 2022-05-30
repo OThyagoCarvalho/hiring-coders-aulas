@@ -1,0 +1,27 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "total": 3
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "Unexpected store location",
+      "code": "ERR_PNPM_UNEXPECTED_STORE",
+      "stack": "Error: Unexpected store location\n    at checkCompatibility (/mnt/c/Users/Thyago/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.cjs:92781:15)\n    at /mnt/c/Users/Thyago/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.cjs:93303:44\n    at Array.map (<anonymous>)\n    at validateModules (/mnt/c/Users/Thyago/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.cjs:93301:34)\n    at getContext (/mnt/c/Users/Thyago/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.cjs:93197:34)\n    at async mutateModules (/mnt/c/Users/Thyago/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.cjs:120072:19)\n    at async addDependenciesToPackage (/mnt/c/Users/Thyago/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.cjs:120365:24)\n    at async /mnt/c/Users/Thyago/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.cjs:121346:31"
+    }
+  },
+  "2 error pnpm": {
+    "code": "ERR_PNPM_UNEXPECTED_STORE",
+    "expectedStorePath": "M:\\.pnpm-store\\v3",
+    "actualStorePath": "/mnt/m/.pnpm-store/v3",
+    "modulesDir": "/mnt/m/PROJETOS/hiring-coders-revisao-react/graphql-n-node/packages/server/node_modules",
+    "prefix": "/mnt/m/PROJETOS/hiring-coders-revisao-react/graphql-n-node/packages/server",
+    "err": {
+      "name": "pnpm",
+      "message": "Unexpected store location",
+      "code": "ERR_PNPM_UNEXPECTED_STORE",
+      "stack": "Error: Unexpected store location\n    at checkCompatibility (/mnt/c/Users/Thyago/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.cjs:92781:15)\n    at /mnt/c/Users/Thyago/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.cjs:93303:44\n    at Array.map (<anonymous>)\n    at validateModules (/mnt/c/Users/Thyago/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.cjs:93301:34)\n    at getContext (/mnt/c/Users/Thyago/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.cjs:93197:34)\n    at async mutateModules (/mnt/c/Users/Thyago/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.cjs:120072:19)\n    at async addDependenciesToPackage (/mnt/c/Users/Thyago/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.cjs:120365:24)\n    at async /mnt/c/Users/Thyago/AppData/Roaming/npm/node_modules/pnpm/dist/pnpm.cjs:121346:31"
+    }
+  }
+}
