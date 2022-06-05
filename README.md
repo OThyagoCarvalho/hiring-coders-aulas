@@ -14,3 +14,4 @@ Notes:
 
 
 ### NODE: 
+  - hello Node (sets up a basic server and listens to port and hostname returning a string)
