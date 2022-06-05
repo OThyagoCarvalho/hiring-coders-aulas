@@ -11,5 +11,8 @@
     "node"
   ],
   "author": "othyagocarvalho@outlook.com",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "query-string": "^7.1.1"
+  }
 }
