@@ -11,3 +11,6 @@ Notes:
 Notes:
 - Used pnpm package manager via ` npm install pnpm -g `
 - Used project scopes and managed them from the root folder e.g:  ` pnpm --filter "@dev-demands/server" install cors `
+
+
+### NODE: 
