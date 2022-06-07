@@ -1,0 +1,19 @@
+{
+  "name": "practicejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "practiceJS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "node",
+    "querystring"
+  ],
+  "author": "Thyago Carvalho",
+  "license": "MIT",
+  "dependencies": {
+    "query-string": "^7.1.1"
+  }
+}
