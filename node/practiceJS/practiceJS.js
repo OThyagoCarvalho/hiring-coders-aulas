@@ -28,7 +28,6 @@ const server = http.createServer((req, res) => {
                 shownResponse = 'Usuário criado com sucesso!';
                 res.statusCode = 201;
                 res.setHeader('Content-Type', 'text/plain');
-
                 res.end(shownResponse);
             }
         );
@@ -37,7 +36,17 @@ const server = http.createServer((req, res) => {
     else if (parsedUrl.pathname == '/selecionar-usuario') {
         fs.readFile('users/' + query.id + '.txt', function (err, data) {
             shownResponse = data;
-            res.statusCode = 200;
+            res.statusCode = 201;
+            res.setHeader('Content-Type', 'application/json');
+            res.end(shownResponse);
+        });
+    }
+    //=============================================================================  REMOVE USER FILE
+    else if (parsedUrl.pathname == '/remover-usuario') {
+        fs.unlink('users/' + query.id + '.txt', function () {
+            console.log('File deleted!');
+            shownResponse = 'Usuário removido!';
+            res.statusCode = 204;
             res.setHeader('Content-Type', 'text/plain');
             res.end(shownResponse);
         });
