@@ -1,5 +1,3 @@
-import { user } from 'pg/lib/defaults';
-import { defaultMaxListeners } from 'pg/lib/query';
 import Sequelize, { Model } from 'sequelize';
 import bcrypt from 'bcryptjs';
 
