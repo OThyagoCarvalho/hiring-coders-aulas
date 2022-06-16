@@ -1,0 +1,56 @@
+.header {
+  height: 150px;
+  background: whitesmoke;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.container {
+  padding: 0;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.formSearch {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.formSearch form {
+  display: flex;
+  justify-content: center;
+}
+
+.formSearch input {
+  margin-bottom: 40px;
+  height: 40px;
+  width: 250px;
+  border: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-size: 16px;
+  outline: 0px;
+}
+
+.formSearch button {
+  max-height: 2.5rem;
+  background-color: #fff;
+  color: #666;
+  border-radius: 5px;
+  border: 0;
+  margin-left: 2px;
+  font-size: 16px;
+}
+
+.moviesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
