@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import Pagination from '../components/Pagination/index';
+import PaginationComponent from '../components/Pagination/index';
 import { args } from '../config/api';
 import { TextField } from '@material-ui/core';
 import { GetServerSideProps } from 'next';
@@ -56,7 +56,7 @@ const Home = ({ list, page, total_pages, search_param }: IPropsComponent) => {
                 <link rel="icon" href="#"></link>
             </Head>
             <header className={styles.header}>
-              <h1> AULA NEXT - API MOVIE DB </h1>
+                <h1> AULA NEXT - API MOVIE DB </h1>
             </header>
             <div>
                 <div className={styles.formSearch}>
@@ -79,16 +79,22 @@ const Home = ({ list, page, total_pages, search_param }: IPropsComponent) => {
             </div>
             <div className={styles.moviesContainer}>
                 {data.map((item: any, index: number) => (
-                    <div key={index}>
-                        <Image className={styles.moviePoster}
+                    <div className={styles.movieContainer} key={index}>
+                        <Image
+                            className={styles.moviePoster}
                             src={`http://image.tmdb.org/t/p/original${item.poster_path}`}
-                            alt="movie cover"
-                            width={360}
-                            height={400}
+                            alt="movie poster"
+                            width={314}
+                            height={360}
                         />
                     </div>
                 ))}
             </div>
+            <PaginationComponent
+                total_pages={total_pages}
+                page={page}
+                handleChange={handleChange}
+            />
         </div>
     );
 };
