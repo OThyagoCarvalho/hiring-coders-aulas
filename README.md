@@ -20,3 +20,10 @@ Notes:
   - practice JS (sets up a server and simulates a basic api with create, update and delete user functionalities)
     - notes: 
       * parses url and user query search to create an object; using conditionals to determine wheter the user wants to update, create or remove an information 
+  - webProtocols (creates a booking service backend from scratch)
+    - notes:
+      * intriduces Docker (image (postgresql), volume(perpetuates data), and containers)
+      * introduces Postbird client, a PostgreSQL GUI (must connect to host:port previously defined in the docker container config file)
+      * introduces ORM (object Relational Mapper) using Sequelize for PostgreSQL
+      * Introduces Security Best Practices with password hashing with BCRYPT
+      * Introduces JWT Concept and Configuration
